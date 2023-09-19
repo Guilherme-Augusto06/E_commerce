@@ -26,7 +26,18 @@ class Produtos:
         self.quantidade = quantidade  # Atributo da quantidade de produtos disponíveis
         self.produtos = {}  #?Atributo para armazenar produtos (Composição)
         self.carrinho = {}
-    
+        self.ps5 = Playstation5
+        self.xbox_x = Xbox_Series_X
+        self.ConPS5 = Controle_Playstation5
+        self.ConX = Controle_Xbox
+        self.gui =Guitarra
+        self.vio = Violão
+        self.IP4 = IPhone14
+
+    def listarprodutos(self):
+        for chave, valor in self.produtos.items():
+            print(f'ID: {chave} - NOME: {valor[0]} - VALOR: {valor[1]}')
+
     def getId_produto(self):
         return self.Id_produto
     
