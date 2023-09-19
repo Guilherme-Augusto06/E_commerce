@@ -59,6 +59,13 @@ def mani():
                         #Listar Produtos
                         os.system('cls')
                         print('Lista de produtos')
+                        print(f'ID: {playstation5.getId_produto()} - Nome: {playstation5.getNome_produto()} - Valor: {playstation5.getValor_produto()} - Quantidade: {playstation5.getQuantidade()}')
+                        print(f'ID: {xbox_series_x.getId_produto()} - Nome: {xbox_series_x.getNome_produto()} - Valor: {xbox_series_x.getValor_produto()} - Quantidade: {xbox_series_x.getQuantidade()}')
+                        print(f'ID: {controle_ps5.getId_produto()} - Nome: {controle_ps5.getNome_produto()} - Valor: {controle_ps5.getValor_produto()} - Quantidade: {controle_ps5.getQuantidade()}')
+                        print(f'ID: {controle_xbox.getId_produto()} - Nome: {controle_xbox.getNome_produto()} - Valor: {controle_xbox.getValor_produto()} - Quantidade: {controle_xbox.getQuantidade()}')
+                        print(f'ID: {guitarra.getId_produto()} - Nome: {guitarra.getNome_produto()} - Valor: {guitarra.getValor_produto()} - Quantidade: {guitarra.getQuantidade()}')
+                        print(f'ID: {violao.getId_produto()} - Nome: {violao.getNome_produto()} - Valor: {violao.getValor_produto()} - Quantidade: {violao.getQuantidade()}')
+                        print(f'ID: {iphone.getId_produto()} - Nome: {iphone.getNome_produto()} - Valor: {iphone.getValor_produto()} - Quantidade: {iphone.getQuantidade()}')
                         produtos.listarprodutos()
                         os.system('pause')
 
@@ -142,7 +149,7 @@ def menu_cli():
                     print('7- IPhone 14')
                     print("=-=-=-=-=-")
                     reserva = int(input('Selecione o desejado: '))
-                    idCli = int(input('Insira o ID do cliente: '))
+                    idCli = int(input('Insira o ID: '))
                     if reserva > 0 and reserva <= 7:
                         produtos.adicionar_carrinho(idCli, reserva)
                     else: 
